@@ -45,11 +45,27 @@ body {
 
 .page-body {
   display: flex;
+  flex-direction: column;
   flex: 10;
   margin: auto;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 80vw;
+}
+
+.body-title,
+.body-lower {
+  flex: 1;
+  padding: 1em 0;
+  width: inherit;
+}
+
+.body-content {
+  display: flex;
+  flex: 3;
+  width: inherit;
+  align-items: center;
+  justify-content: center;
 }
 
 .page-footer {
@@ -65,4 +81,14 @@ body {
 .page-footer img {
   width: 30px;
   padding:  0 1em;
+}
+
+.blue-button {
+  border: none;
+  border-radius: 10px;
+  padding: 0.75em;
+  width: 70vw;
+  background-color: #3ABCEF;
+  color: #FCFCFC;
+  font-size: 1.5em;
 }
