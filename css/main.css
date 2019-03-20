@@ -65,6 +65,7 @@ BODY
 
 .body-title,
 .body-lower {
+  display: flex;
   flex: 1;
   padding: 1em 0;
   width: inherit;
@@ -79,6 +80,9 @@ BODY
   flex-direction: column;
 }
 
+.flex-end {
+  align-items: flex-end;
+}
 
 /***************************************
 FOOTER
