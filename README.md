@@ -4,4 +4,7 @@ To Aimee.
 ## TO DO
 Setup base HTML/CSS  
 Compile list and information of all exercises  
-Set frame for mobile  
+Create layout for mobile  
+Setup JavaScript variables
+Setup JavaScript states
+Setup JavaScript objects (mostly exercises)  
