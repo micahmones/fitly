@@ -28,16 +28,19 @@ body {
 
 .page-header {
   font-family: BloggerSans;
-  letter-spacing: 8px;
+  letter-spacing: 0.75em;
   display: flex;
   flex: 1;
   flex-direction: column;
   margin: auto;
   justify-content: center;
-  align-items: center;
   width: 100vw;
   background-color: #3ABCEF;
   color: #FCFCFC;
+}
+
+.page-header h1 {
+  padding-left: 3em;
 }
 
 .page-body {
@@ -52,14 +55,14 @@ body {
 .page-footer {
   display: flex;
   flex: 1;
-  margin: auto;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
   width: 100vw;
   background-color: #FFFFFF;
   border-top: 1px solid #efefef;
 }
 
 .page-footer img {
-  padding: 30px;
+  width: 30px;
+  padding:  0 1em;
 }
