@@ -5,6 +5,6 @@ To Aimee.
 Setup base HTML/CSS  
 Compile list and information of all exercises  
 Create layout for mobile  
-Setup JavaScript variables
-Setup JavaScript states
+Setup JavaScript variables  
+Setup JavaScript states  
 Setup JavaScript objects (mostly exercises)  
