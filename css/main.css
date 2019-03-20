@@ -109,3 +109,7 @@ UI STYLES
   color: #FCFCFC;
   font-size: 1.5em;
 }
+
+.blue-button:hover {
+  background-color: #34adee;
+}
