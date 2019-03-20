@@ -1,5 +1,6 @@
 # FITLY - DESIGN 1
-To Aimee.
+Micah Mones  
+Matthew Nazari  
 
 ## TO DO
 Setup base HTML/CSS  
