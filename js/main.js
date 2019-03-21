@@ -15,9 +15,9 @@ var exercises = [ bench_press ];
 
 //just an example
 var bench_press = {
-  name: 'Bench Press',
-  desc: '',
-  img: 'bench.jpg'
+  name: "Bench Press",
+  desc: "Lay flat, fuck up your shoulders, and don't do full range.",
+  img: "bench.jpg"
 };
 
 //******************************************
@@ -36,5 +36,9 @@ var bench_press = {
 //FUNCTIONS TO CHANGE UI
 //******************************************
 
+//testing this
+function goBack(){
+  window.history.back();
+}
 
 
