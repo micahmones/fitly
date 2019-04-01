@@ -24,6 +24,10 @@ h1 {
   display: inline-block;
 }
 
+h2 {
+  font-weight: 300;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -101,6 +105,12 @@ BODY
   width: inherit;
   justify-content: center;
   align-items: center;
+  margin: auto;
+}
+
+.left {
+  width: 70vw;
+  justify-content: start;
 }
 
 .body-content {
@@ -122,19 +132,19 @@ BODY
   position: relative;
   flex: 1 100%;
   min-height: 120px;
-  width: 700px;
+  width: 1200px;
   max-width: 100%;
   box-sizing: border-box;
 }
 
 @media all and (min-width: 900px){
   .flex-item {
-    min-height: 180px;
+    min-height: 220px;
   }
 }
 
 .drop-shadow {
-  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2)
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.3)
 }
 
 a.flex-item {
@@ -147,15 +157,6 @@ a.flex-item {
   background-repeat: no-repeat;
 }
 
-.opacity {
-  opacity: 0.6;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.opacity:hover {
-  opacity: 1;
-}
-
 .text-container {
   position: absolute;
   top: 50%;
@@ -165,17 +166,36 @@ a.flex-item {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  background-color: white;
   width: 120px;
   height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-h4 {
+.zoom {
+  transition: transform 0.4s ease-in-out;
+}
+
+.zoom:hover {
+  transform: scale(1.02);
+}
+
+.text-container h4 {
   display: inline;
   font-weight: 300;
-  color: #4d4d4d;
+  color: #FFF;
   margin: 0;
   padding: 1.5vmin;
+}
+
+@media all and (min-width: 900px){
+  .text-container {
+    width: 200px;
+    height: 65px;
+  }
+
+  .text-container h4 {
+    font-size: 22px;
+  }
 }
 /***************************************
 FOOTER
