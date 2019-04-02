@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fitly</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+
+  <div class="page">
+    <!-- HEADER -->
+    <section class="page-header">
+      <div class="main-wrapper relative">
+        <div class="header-title">
+          <a href="index.html">
+            <h1>FITLY</h1>
+          </a>
+        </div>
+
+        <!-- NAV MENU HAMBURGER -->
+        <nav role="navigation">
+          <div class="menu-toggle" onclick="toggleToggle()"><span></span></div>
+          <ul class="menu">
+            <li><a href="index.html"><span>Home</span></a></li>
+            <li><a href="#" onclick="toggleBeginner()"><span>Beginner &raquo;</span></a></li>
+
+            <ul class="beginner-dropdown">
+              <li><a href="#"><span>Full Body</span></a></li>
+              <li><a href="#"><span>Upper Body</span></a></li>
+              <li><a href="#"><span>Lower Body</span></a></li>
+            </ul>
+
+            <li><a href="#" onclick="toggleIntermediate()"><span>Intermediate &raquo;</span></a></li>
+            <ul class="intermediate-dropdown">
+              <li><a href="#"><span>Full Body</span></a></li>
+              <li><a href="#"><span>Push</span></a></li>
+              <li><a href="#"><span>Pull</span></a></li>
+              <li><a href="#"><span>Upper Body</span></a></li>
+              <li><a href="#"><span>Lower Body</span></a></li>
+            </ul>
+
+            <li><a href="#" onclick="toggleAdvanced()"><span>Advanced &raquo;</span></a></li>
+            <ul class="advanced-dropdown">
+              <li><a href="#"><span>Full Body</span></a></li>
+              <li><a href="#"><span>Push</span></a></li>
+              <li><a href="#"><span>Pull</span></a></li>
+              <li><a href="#"><span>Upper Body</span></a></li>
+              <li><a href="#"><span>Lower Body</span></a></li>
+            </ul>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <!-- MAIN BODY CONTENT -->
+    <section class="page-body">
+      <div class="main-wrapper">
+        <!-- <div class="body-title left"> -->
+        <!-- <h2>Experience</h2> -->
+        <!-- </div> -->
+        <div class="body-content">
+          <a href="beginner.html" class="flex-item">
+            <div class="bg-image flex-item zoom drop-shadow" style="background-image:url('imgs/full-body.jpg');">
+              <div class="text-container">
+                <h4>Full Body</h4>
+              </div>
+            </div>
+          </a>
+
+          <a href="intermediate.html" class="flex-item">
+            <div class="bg-image flex-item zoom drop-shadow" style="background-image:url('imgs/upper.jpg');">
+              <div class="text-container">
+                <h4>Upper Body</h4>
+              </div>
+            </div>
+          </a>
+
+          <a href="advanced.html" class="flex-item">
+            <div class="bg-image flex-item zoom drop-shadow" style="background-image:url('imgs/lower.jpg');">
+              <div class="text-container">
+                <h4>Lower Body</h4>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- <div class="body-lower"> -->
+
+        <!-- </div> -->
+      </div>
+
+    </section>
+
+    <!-- FOOTER / MOBILE NAV BAR -->
+    <!---
+    <section class="page-footer">
+
+      <div class="main-wrapper content-spacing">
+        <img src="imgs/icons/home_blue.svg" alt="home" class="icons">
+        <img src="imgs/icons/workout.svg" alt="workout" class="icons">
+        <img src="imgs/icons/settings.svg" alt="settings" class="icons">
+      </div>
+
+    </section>-->
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
