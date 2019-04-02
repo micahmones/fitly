@@ -2,7 +2,10 @@
 //PRIMARY ELEMENTS
 //******************************************
 var menu = document.querySelector(".menu"),
-    toggle = document.querySelector(".menu-toggle");
+    toggle = document.querySelector(".menu-toggle"),
+    beginner = document.querySelector(".beginner-dropdown"),
+    intermediate = document.querySelector(".intermediate-dropdown"),
+    advanced = document.querySelector(".advanced-dropdown");
 
 function toggleToggle() {
   toggle.classList.toggle("menu-open");
@@ -10,28 +13,40 @@ function toggleToggle() {
 };
 
 function toggleMenu() {
+
+  //check if any submenus are open and closes
+  if (beginner.classList.contains("active")) {
+    beginner.classList.toggle("active");
+  }
+  if (intermediate.classList.contains("active")) {
+    intermediate.classList.toggle("active");
+  }
+  if (advanced.classList.contains("active")) {
+    advanced.classList.toggle("active");
+  }
+  
+  //close entire menu
   menu.classList.toggle("active");
 };
 
-//toggle.addEventListener("click", toggleToggle, false);
-//toggle.addEventListener("click", toggleMenu, false);
+//add active state to second level of the menu
+function toggleBeginner() {
+  beginner.classList.toggle("active");
+};
+
+function toggleIntermediate() {
+  intermediate.classList.toggle("active");
+}
+
+function toggleAdvanced() {
+  advanced.classList.toggle("active");
+}
 
 
 //******************************************
 //OBJECTS AND HOLDERS
 //******************************************
 
-//array holding objects and info for all exercises
-//could split up if they are too many exercises if you want
-//e.g: push, pull, full body, etc
-var exercises = [bench_press];
-
-//just an example
-var bench_press = {
-  name: "Bench Press",
-  desc: "Lay flat, fuck up your shoulders, and don't do full range.",
-  img: "bench.jpg"
-};
 
 //******************************************
 //UI STATES
@@ -48,11 +63,6 @@ var bench_press = {
 //******************************************
 //FUNCTIONS TO CHANGE UI
 //******************************************
-
-//testing this
-function goBack() {
-  window.history.back();
-}
 
 //fading in listener on homepage
 document.addEventListener('DOMContentLoaded', setTimeout(

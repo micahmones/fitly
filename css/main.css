@@ -312,7 +312,7 @@ nav .menu {
   z-index: 1;
   width: 100%;
   background: #3ABCEF;
-  padding: 4em 0 3.5em;
+  padding: 4.75em 0 4.25em;
   position: absolute;
   transform: translateY(-100%);
   transition: transform 0.5s cubic-bezier(1, 0.5, 0, 1);
@@ -325,32 +325,76 @@ nav .menu li {
 }
 nav .menu li a {
   font-family: Orkney_Regular;
-  padding: 1em;
+  padding: 1em 5.5em;
   color: #fff;
   display: block;
   background: none;
   line-height: 1em;
   letter-spacing: 1px;
   font-size: 1.125em;
-  text-align: center;
+  text-align: right;
   text-decoration: none;
   transition: background 0.2s ease-in-out;
+}
+
+@media all and (max-width: 900px) {
+  nav .menu li a {
+    padding-right: 1.5em;
+  }
+}
+
+@media all and (min-width: 1400px) {
+  nav .menu li a {
+    padding-right: 11em;
+  }
+}
+
+@media all and (min-width: 1600px) {
+  nav .menu li a {
+    padding-right: 20.5em;
+  }
 }
 
 nav .menu li a:hover, nav .menu li a:focus, nav .menu li a:active {
   background: rgba(255, 255, 255, 0.2);
 }
 .menu-toggle {
-  top: 20px;
+  top: 33px;
   z-index: 2;
-  left: 5vmin;
+  right: 30px;
   width: 22px;
   height: 4px;
   padding: 8px 0;
   cursor: pointer;
   border-radius: 50%;
-  position: relative;
+  position: absolute;
 }
+
+@media all and (min-width: 600px) {
+  .menu-toggle {
+    top: 40px;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .menu-toggle {
+    top: 45px;
+    right: 100px;
+  }
+}
+
+@media all and (min-width: 1400px) {
+  .menu-toggle {
+    right: 200px;
+  }
+}
+
+@media all and (min-width: 1600px) {
+  .menu-toggle {
+    right: 370px;
+  }
+}
+
 .menu-toggle span {
   height: 4px;
   display: block;
@@ -424,4 +468,25 @@ nav .menu li a:hover, nav .menu li a:focus, nav .menu li a:active {
 }
 .menu-toggle:hover::before, .menu-toggle:focus::before, .menu-toggle:active::before, .menu-toggle:hover::after, .menu-toggle:focus::after, .menu-toggle:active::after {
   width: 18px;
+}
+
+.beginner-dropdown,
+.intermediate-dropdown,
+.advanced-dropdown {
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 2;
+  width: 100%;
+  background: #3ABCEF;
+  padding: 4.75em 0 4.25em;
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.5s cubic-bezier(1, 0.5, 0, 1);
+}
+
+.beginner-dropdown.active,
+.intermediate-dropdown.active,
+.advanced-dropdown.active {
+  transform: translateY(0);
 }
