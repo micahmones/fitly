@@ -41,3 +41,28 @@ function toggleIntermediate() {
 function toggleAdvanced() {
   advanced.classList.toggle("active");
 }
+
+//toggle for checkbox on click
+//add this as an onclick function to checkboxes
+toggleBox = el => {
+  el.classList.toggle("is-checked");
+
+  if (checkBox.indexOf(el) === -1) {
+    checkBox.push(el);
+  } else {
+    checkBox.pop(checkBox.indexOf(el));
+  }
+  startNew();
+  console.log(checkBox);
+}
+
+var checkBox = []; //array to push checkboxes into upon click
+var allCheckboxes = document.getElementsByClassName("checkbox");
+//get all checkboxes on current page
+
+//test popup to suggest to start a new session once all workouts are checked
+startNew = () => {
+  if(checkBox.length === allCheckboxes.length){
+    alert("Start a new workout?");
+  }
+}
