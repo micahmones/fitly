@@ -14,7 +14,7 @@ function toggleToggle() {
 
 function toggleMenu() {
 
-  //check if any submenus are open and closes
+  //check if any submenus are open and closes them
   if (beginner.classList.contains("active")) {
     beginner.classList.toggle("active");
   }
@@ -44,14 +44,12 @@ function toggleAdvanced() {
 
 //toggle for checkbox on click
 //add this as an onclick function to checkboxes
-toggleBox = el => {
-  el.classList.toggle("is-checked");
+var num = 0;
+toggleBox = item => {
+  item.classList.toggle("is-checked");
 
-  if (checkBox.indexOf(el) === -1) {
-    checkBox.push(el);
-  } else {
-    checkBox.pop(checkBox.indexOf(el));
-  }
+  
+
   startNew();
   console.log(checkBox);
 }
