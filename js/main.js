@@ -44,13 +44,27 @@ function toggleAdvanced() {
 
 //toggle for checkbox on click
 //add this as an onclick function to checkboxes
-var num = 0;
-toggleBox = item => {
+
+//this works if you click the buttons in order
+
+/*
+toggleBox = (item) => {
   item.classList.toggle("is-checked");
+  var allChecks = document.querySelectorAll(".checkbox");
 
-  
+  for (var i = 0; i < allChecks.length; i++) {
+    if (allChecks[i].classList.contains("is-checked")) {
+      if (checkBox.indexOf(i) == -1) {
+        checkBox.push(i);
+        if (checkBox.length == allCheckboxes.length) {
+          startNew()
+        }
+      }
+    } else if (checkBox.includes(i) == true) {
+      checkBox.pop(i);
+    }
+  }
 
-  startNew();
   console.log(checkBox);
 }
 
@@ -60,7 +74,19 @@ var allCheckboxes = document.getElementsByClassName("checkbox");
 
 //test popup to suggest to start a new session once all workouts are checked
 startNew = () => {
-  if(checkBox.length === allCheckboxes.length){
-    alert("Start a new workout?");
+  alert("Start a new workout?");
+}
+*/
+
+var checkBox = document.querySelectorAll("input[type=checkbox]");
+
+toggleBox = () => {
+
+  if (checkBox.every(check)) {
+    alert("Hi")
   }
+}
+
+function check(){
+  checkBox.checked == true;
 }
