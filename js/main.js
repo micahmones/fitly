@@ -47,7 +47,7 @@ function toggleAdvanced() {
 
 //this works if you click the buttons in order
 
-/*
+
 toggleBox = (item) => {
   item.classList.toggle("is-checked");
   var allChecks = document.querySelectorAll(".checkbox");
@@ -76,8 +76,8 @@ var allCheckboxes = document.getElementsByClassName("checkbox");
 startNew = () => {
   alert("Start a new workout?");
 }
-*/
 
+/*
 var checkBox = document.querySelectorAll("input[type=checkbox]");
 
 toggleBox = () => {
@@ -90,3 +90,4 @@ toggleBox = () => {
 function check(){
   checkBox.checked == true;
 }
+*/
