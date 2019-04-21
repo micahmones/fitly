@@ -1,3 +1,79 @@
+// main package
+var pkg = {
+  firstChoice: "",
+  secondChoice: "",
+};
+
+var optBeginner = [
+  {
+    title: "Full Body Challenge",
+    subtitle: "Train all major muscle groups through primary compound exercises.",
+    img: "fullbody"
+  },
+  {
+    title: "Upper Body Challenge",
+    subtitle: "Target the upper body muscle groups through compound exercises.",
+    img: "upperbody"
+  },
+  {
+    title: "Lower Body Challenge",
+    subtitle: "Target the lower body muscle groups through compound exercises.",
+    img: "lowerbody"
+  }
+];
+
+const handle = {
+  set: function (obj, props, value) {
+    if(props == "firstChoice"){
+      if(pkg.firstChoice == "Beginner"){
+      }
+    }
+  }
+};
+
+const prox = new Proxy(pkg, handle);
+
+
+ExperienceSet = item => {
+  const firstChoice = item.firstElementChild.innerHTML;
+
+  pkg.firstChoice = firstChoice;
+  prox.firstChoice = pkg.firstChoice;
+
+  console.log(pkg.firstChoice)
+  console.log("Hello")
+
+  window.location = "workouts.html"
+  localStorage.setItem("pkg", JSON.stringify(pkg));
+}
+
+ExperienceSetUI = arr => {
+  for (let i = 0; i < arr.length; i++) {
+    const items = `
+    <div class="option-container wrap">
+      <div class="center">
+        <img class="option-icon" src="/imgs/icons/.svg" />
+      </div>
+      <div class="option-main" onclick="ExperienceSet(this)">
+        <h3>${arr[i].title}</h3>
+        <p>${arr[i].subtitle}</p>
+      </div>
+    </div>`;
+
+    document.getElementsByClassName("body-content")[0].innerHTML += items
+  }
+}
+
+var spkg = localStorage.getItem("pkg");
+if (spkg) {
+  console.log(spkg);
+  pkg = JSON.parse(spkg); //associates default package with one that is stored
+  console.log(pkg)
+  if(pkg.firstChoice == "Beginner"){
+    ExperienceSetUI(optBeginner)
+  }
+}
+
 //******************************************
 //NAV MENU ELEMENTS
 //******************************************
