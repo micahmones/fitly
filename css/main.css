@@ -4,8 +4,18 @@
 }
 
 @font-face {
-  font-family: Orkney_Regular;
-  src: url(Orkney_Regular.otf);
+  font-family: Futura;
+  src: url(FuturaPTBook.otf);
+}
+
+@font-face {
+  font-family: Futura_Demi;
+  src: url(FuturaPTDemi.otf);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html,
@@ -14,18 +24,14 @@ body {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 100vw;
+  max-width: 100%; 
   background-color: #FCFCFC;
-  color: #181818;
-  font-family: Orkney_Regular;
+  color: #303435;
+  font-family: Futura;
 }
 
 h1 {
   display: inline-block;
-}
-
-h2 {
-  font-weight: 300;
 }
 
 a {
@@ -45,12 +51,26 @@ a {
   flex-direction: column;
 }
 
+.wrap {
+  display: flex;
+  width: 1200px;
+  max-width: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 25px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .main-wrapper {
   box-sizing: border-box;
-  width: 100%;
-  max-width: 1200px;
+  width: 1200px;
+  max-width: 100%;
   margin: auto;
-  padding: 2vmin;
 }
 
 .content-spacing {
@@ -61,7 +81,7 @@ a {
 
 @media all and (min-width: 900px){
   .main-wrapper {
-    max-width: 1200px;
+   
   }
 }
 
@@ -69,14 +89,15 @@ a {
 HEADER
 ***************************************/
 .page-header {
-  font-family: BloggerSans;
+  box-sizing: border-box;
+  font-family: Futura;
   letter-spacing: 0.75em;
   display: flex;
-  flex: 1;
+  padding: 4vmin;
   flex-direction: column;
   margin: auto;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   background-color: #3ABCEF;
   color: #FCFCFC;
 }
@@ -108,7 +129,6 @@ BODY
 .page-body {
   display: flex;
   flex-direction: column;
-  flex: 10;
   justify-content: center;
   align-items: center;
 }
@@ -116,28 +136,158 @@ BODY
 .body-title,
 .body-lower {
   display: flex;
-  flex: 1;
   padding: 1em 0;
   width: inherit;
+  margin: auto;
   justify-content: center;
   align-items: center;
-  margin: auto;
 }
 
-.left {
-  width: 70vw;
-  justify-content: start;
+.body-lower {
+  max-width: 100%;
+}
+
+.body-title {
+  box-sizing: border-box;
+  position: relative;
+  width: 100vw;
+  margin-top: -25%;
+  margin-left: calc(-50vw + 50%);
+  margin-bottom: 12vmin;
+  background-color: #3abcef;
+  z-index: 1;
+}
+
+.body-title::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #3abcef;
+  transform-origin: top left;
+  transform: skewY(-5deg);
+  z-index: -1;
+}
+
+.body-title::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #3abcef;
+  transform-origin: top right;
+  transform: skewY(-5deg);
+  z-index: -1;
+}
+
+@media all and (min-width: 900px) {
+  .body-title {
+    height: 25vmin;
+  }
+}
+
+.title-svg {
+  height: 200px;
+  z-index: 100;
+}
+
+@media all and (min-width: 900px){
+  .title-svg {
+   height: 700px;
+  }
+}
+
+.svg-container {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+h2{
+  color: #061c35;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+.demi {
+  font-size: 30px;
+  font-family: Futura_Demi;
+}
+
+.body-title > div > h6 {
+  text-align: right;
+  font-family: Futura;
+  font-weight: 300;
+  color: white;
+  font-size: 16px;
+}
+
+@media all and (min-width: 900px){
+  .demi {
+    font-size: 92px;
+    letter-spacing: -4px;
+  }
+
+  .body-title > div > h6 {
+    font-size: 32px;
+  }
+}
+
+.align-left {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.align-right {
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .body-content {
   display: flex;
-  flex: 3;
-  padding: 1em 0;
   width: inherit;
+  margin-top: 5vmin;
+  max-width: 100%;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   transition: opacity 1s ease-in;
+}
+
+.option-container {
+  flex-direction: row;
+}
+
+.option-icon {
+  height: 50px;
+  width: 50px;
+}
+
+.option-main {
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 1px solid #b8bfc1;
+  margin-left: 3vmin;
+  padding: 4vmin;
+  width: 1200px;
+  max-width: 100%;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.option-main:hover {
+  background-color: #f1f1f1;
+}
+
+.option-main>h3 {
+  font-family: Futura_Demi;
 }
 
 .flex-end {
@@ -167,52 +317,6 @@ a.flex-item {
   margin: 6px;
 }
 
-.bg-image {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.text-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  width: 120px;
-  height: 40px;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.zoom {
-  transition: transform 0.4s ease-in-out;
-}
-
-.zoom:hover {
-  transform: scale(1.02);
-}
-
-.text-container h4 {
-  display: inline;
-  font-weight: 300;
-  color: #FFF;
-  margin: 0;
-  padding: 1.5vmin;
-}
-
-@media all and (min-width: 900px){
-  .text-container {
-    width: 200px;
-    height: 65px;
-  }
-
-  .text-container h4 {
-    font-size: 22px;
-  }
-}
 /***************************************
 FOOTER
 ***************************************/
@@ -310,7 +414,7 @@ button {
 nav {
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: 200;
   width: 100%;
   position: absolute;
 }
@@ -333,7 +437,7 @@ nav .menu li {
   list-style: none;
 }
 nav .menu li a {
-  font-family: Orkney_Regular;
+  font-family: Futura;
   padding: 1em 5.5em;
   color: #fff;
   display: block;
@@ -611,12 +715,6 @@ CHECKBOX BUTTON STUFF
 
 .workout-box {
   flex: 1;
-}
-
-@media all and (max-width: 420px) {
-  section[class=page-body] > .main-wrapper {
-    padding: 25px;
-  }
 }
 
 .workout-box input {
