@@ -60,10 +60,12 @@ a {
   margin-left: calc(-50vw + 50%);
   margin-bottom: -20%;
   text-align: center;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .landing-info-text {
   margin-bottom: -100px;
+  transition: opacity 0.25s ease-in;
 }
 
 .landing-info-text>p {
@@ -96,7 +98,7 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  transition: opacity 1s ease-in;
+  transition: opacity 0.5s ease-in;
 }
 
 .page {
@@ -539,7 +541,7 @@ button {
   background-color: #3ABCEF;
   color: #FCFCFC;
   font-size: 20px;
-  transition: all 0.3s ease-in;
+  transition: all 0.25s ease-in;
 }
 
 .inset {

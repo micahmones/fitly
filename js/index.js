@@ -5,7 +5,13 @@ function timeOut() {
   }, 150); // delay for fitly logo
   setTimeout(function () {
     document.getElementsByClassName('blue-btn')[0].classList.remove('fade')
-  }, 2000); // delay for get started button
+  }, 1600); // delay for get started button
+  setTimeout(function () {
+    document.getElementsByClassName('landing-info-text')[0].classList.remove('fade')
+  }, 1200); // delay for get started button
+  setTimeout(function () {
+    document.getElementsByClassName('landing-info')[0].classList.remove('fade')
+  }, 1000); // delay for get started button
 }
 
 document.addEventListener("DOMContentLoaded", timeOut())
