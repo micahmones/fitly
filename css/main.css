@@ -40,8 +40,63 @@ a {
 }
 
 /* ENTIRE PAGE CONTAINER */
-.dark {
-  background-color: #181818;
+.landing {
+  overflow: hidden;
+  position: relative;
+  background: rgb(36, 96, 241);
+  background: linear-gradient(30deg, rgba(36, 96, 241, 1) 0%, rgba(8, 194, 244, 1) 50%, rgba(52, 235, 249, 1) 100%);
+}
+
+.landing-info {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 50% 50% 0 0 / 20%;
+  height: 50vh;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-bottom: -20%;
+  text-align: center;
+}
+
+.landing-info-text {
+  margin-bottom: -100px;
+}
+
+.landing-info-text>p {
+  line-height: 1em;
+}
+
+.landing-info-text>h1 {
+  font-size: 28px;
+  margin-bottom: 3vmin;
+}
+
+@media all and (min-width: 900px){
+  .landing-info-text>p {
+    font-size: 20px;
+  }
+
+  .landing-info-text>h1 {
+    font-size: 40px;
+    margin-bottom: 1vmin;
+  }
+}
+
+.landing-logo {
+  display: flex;
+  box-sizing: border-box;
+  width: inherit;
+  height: 50vh;
+  margin-top: 5vmin;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: opacity 1s ease-in;
 }
 
 .page {
@@ -476,14 +531,14 @@ button {
 }
 
 .blue-btn {
+  font-family: Futura;
   border: none;
-  border-radius: 30px;
+  border-radius: 50px;
   padding: 0.75em;
-  width: 220px;
+  width: 170px;
   background-color: #3ABCEF;
   color: #FCFCFC;
-  font-size: 1.5em;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.22);
+  font-size: 20px;
   transition: all 0.3s ease-in;
 }
 
@@ -493,7 +548,8 @@ button {
 
 @media all and (min-width: 900px){
   .blue-btn {
-    width: 300px;
+    font-size: 24px;
+    width: 220px;
   }
 }
 
@@ -514,27 +570,14 @@ button {
 }
 
 .fitly-logo {
-  height: 100px;
-  width: 100px;
-  padding: 20px 0;
-}
-
-.fitly-name {
-  font-family: BloggerSans;
-  color: #FFFFFF;
-  letter-spacing: 0.5em;
-  text-indent: 0.5em;
-  text-align: center;
+  height: 120px;
+  width: 120px;
 }
 
 @media all and (min-width: 900px){
   .fitly-logo {
-    height: 150px;
-    width: 150px;
-  }
-
-  .fitly-name {
-    font-size: 42px;
+    height: 200px;
+    width: 200px;
   }
 }
 
