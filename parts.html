@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Welcome - Fitly</title>
+  <title>Muscle Groups - Fitly</title>
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
@@ -38,49 +38,64 @@
   <section class="page-body">
     <div class="main-wrapper">
       <div class="wrap center">
-        <img class="title-svg" src="/imgs/choice.svg" alt="start">
+        <img class="title-svg" src="/imgs/workout.svg" alt="workout">
       </div>
-      <div class="body-title">
-        <div class="wrap flex align-right">
-          <h2 class="demi">Welcome to Fitly.</h2>
-          <h6>Please select your experience level below.</h6>
+      <div class="body-title parts">
+        <div class="wrap flex align-left">
+          <h2 class="demi">No XP Selected</h2>
+          <h6 class="text-left">Set your experience level first!</h6>
         </div>
       </div>
       <div class="body-content">
-
-
-        <div class="option-container wrap">
-          <div class="center">
-            <img class="option-icon" src="/imgs/icons/beginner.svg" alt="beginner">
-          </div>
-          <div class="drop-shadow option-main" onclick="ExperienceSet(this)">
-              <h3>Beginner</h3>
-              <p>I have little to no experience in lifting weights.</p>
-          </div>
-        </div>
-
-
-        <div class="option-container wrap">
-          <div class="center">
-            <img class="option-icon" src="/imgs/icons/intermediate.svg" alt="intermediate">
-          </div>
-          <div class="drop-shadow option-main" onclick="ExperienceSet(this)">
-            <h3>Intermediate</h3>
-            <p>I have decent experience and knowledge and I’m familiar with the basics of weight training.</p>
-          </div>
-        </div>
-
-        <div class="option-container wrap">
-          <div class="center">
-            <img class="option-icon" src="/imgs/icons/advanced.svg" alt="advanced">
-          </div>
-          <div class="drop-shadow option-main" onclick="ExperienceSet(this)">
-            <h3>Advanced</h3>
-            <p>I’m familiar with all exercises and have near-perfect technique with all lifts.</p>
-          </div>
-        </div>
-
         
+
+        <div class="drop-shadow wrap option" onclick="PartsSet(this)">
+          <div class="center">
+            <img class="option-icon" src="/imgs/icons/chest.svg" alt="chest">
+          </div>
+          <div class="center">
+            <h3>Chest</h3>
+          </div>
+        </div>
+
+        <div class="drop-shadow wrap option" onclick="PartsSet(this)">
+          <div class="center">
+            <img class="option-icon" src="/imgs/icons/back.svg" alt="back">
+          </div>
+          <div class="center">
+            <h3>Back</h3>
+          </div>
+        </div>
+
+        <div class="drop-shadow wrap option" onclick="PartsSet(this)">
+          <div class="center">
+            <img class="option-icon" src="/imgs/icons/shoulders.svg" alt="shoulders">
+          </div>
+          <div class="center">
+            <h3>Shoulders</h3>
+          </div>
+        </div>
+
+        <div class="drop-shadow wrap option" onclick="PartsSet(this)">
+          <div class="center">
+            <img class="option-icon" src="/imgs/icons/arms.svg" alt="arms">
+          </div>
+          <div class="center">
+            <h3>Arms</h3>
+          </div>
+        </div>
+
+        <div class="drop-shadow wrap option" onclick="PartsSet(this)">
+          <div class="center">
+            <img class="option-icon" src="/imgs/icons/legs.svg" alt="legs">
+          </div>
+          <div class="center">
+            <h3>Legs</h3>
+          </div>
+        </div>
+
+        <button class="blue-btn" onclick="workoutPage()">Add to Workout</button>
+
 
       </div>
     </div>
