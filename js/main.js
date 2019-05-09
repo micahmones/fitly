@@ -61,11 +61,10 @@ var back = [{
     muscleB: "Legs",
     sets: "5",
     reps: "5",
-    tip: `Lie flat on the bench.
-    Grip the bar and retract the scapula.
-    Unrack and hold above chest.
-    Breathe in and lower the bar, touching the chest.
-    Press upwards and squeeze`
+    tip: `Stand with you mid-foot under the barbell.
+    Bend over and grab the bar with shoulder width grip.
+    Bend your knees until your shins touch the bar.
+    Lift your chest up, straighten your lower back and stand up.`
   },
   {
     name: "Lateral Pulldown",
@@ -85,26 +84,24 @@ var back = [{
     muscleB: "Biceps",
     sets: "3",
     reps: "12",
-    tip: `Lie flat on the bench.
-    Grip the bar and retract the scapula.
-    Unrack and hold above chest.
-    Breathe in and lower the bar, touching the chest.
-    Press upwards and squeeze.`
+    tip: `Grip handles and sit up straight.
+    Retract your arms and shoulders to pull handle to mid torso.
+    Pause and squeeze back muscles.
+    Then slowly retract back to starting position. `
   }
 ];
 
 var shoulders = [{
-    name: "Dumbbell Overhead Press",
+    name: "Dumbbell Shoulder Press",
     img: "db-ohp",
     muscleA: "Deltoids",
     muscleB: "Triceps",
     sets: "3",
     reps: "8",
-    tip: `Lie flat on the bench.
-    Grip the bar and retract the scapula.
-    Unrack and hold above chest.
-    Breathe in and lower the bar, touching the chest.
-    Press upwards and squeeze`
+    tip: `Bend your elbows and raise your upper arms to shoulder height.
+    Make sure dumbbells are at ear level.
+    Now Push the dumbbells up until each of the inner ends lightly touch.
+    And slowly return to starting position.`
   },
   {
     name: "Lateral Raises",
@@ -113,9 +110,10 @@ var shoulders = [{
     muscleB: "Posterior Deltoid",
     sets: "3",
     reps: "12",
-    tip: `Adjust seat, and grab handles shoulder width apart.
-    Pull bar down to upper chest.
-    Pause and slowly return to starting position.`
+    tip: `Grasp dumbbells in front of your thighs with elbows slightly bent.
+    Slightly Bend over with your hip and knees slightly bent.
+    Now Raise your arms to the side until they're shoulder height.
+    And return slowly back to starting position.`
   },
   {
     name: "Front Raises",
@@ -124,11 +122,10 @@ var shoulders = [{
     muscleB: "Lateral Deltoid",
     sets: "3",
     reps: "12",
-    tip: `Lie flat on the bench.
-    Grip the bar and retract the scapula.
-    Unrack and hold above chest.
-    Breathe in and lower the bar, touching the chest.
-    Press upwards and squeeze.`
+    tip: `Using overhand grip, hold the dumbbells with your arms fully extended down
+    in front of your thighs.
+    Now raise your arms straight in front of you until they are parallel to the floor.
+    Pause at the top and slowly return to starting position.`
   }
 ];
 
@@ -139,11 +136,10 @@ var arms = [{
     muscleB: "Forearm",
     sets: "3",
     reps: "8",
-    tip: `Lie flat on the bench.
-    Grip the bar and retract the scapula.
-    Unrack and hold above chest.
-    Breathe in and lower the bar, touching the chest.
-    Press upwards and squeeze`
+    tip: `Using underhand grip, hold the dumbbells straight down and keep
+    your elbows tucked next to your torso.
+    Now retract your forearms until the dumbbells reach shoulder level.
+    Pause at the top and slowly return to starting position.`
   },
   {
     name: "Tricep Pushdown",
@@ -152,9 +148,10 @@ var arms = [{
     muscleB: "Deltoids",
     sets: "3",
     reps: "12",
-    tip: `Adjust seat, and grab handles shoulder width apart.
-    Pull bar down to upper chest.
-    Pause and slowly return to starting position.`
+    tip: `Adjust the pulley so handles are at your chest level.
+    Grasp handles and tuck elbows next to your torso.
+    Now extend your forearms down until your arms are straight.
+    Pause at the bottom and slowly return to starting position.`
   },
   {
     name: "Dumbbell Hammer Curl",
@@ -163,11 +160,10 @@ var arms = [{
     muscleB: "Forearm",
     sets: "3",
     reps: "8",
-    tip: `Lie flat on the bench.
-    Grip the bar and retract the scapula.
-    Unrack and hold above chest.
-    Breathe in and lower the bar, touching the chest.
-    Press upwards and squeeze.`
+    tip: `Hold the dumbells with your arms fully extended down to your sides.
+    The palms of your hands should be facing towards your torso.
+    Now retract your forearms until the dumbbells reach shoulder level.
+    Pause at the top and slowly return to starting position.`
   }
 ];
 
@@ -178,11 +174,12 @@ var legs = [{
     muscleB: "Glutes",
     sets: "5",
     reps: "5",
-    tip: `Lie flat on the bench.
-    Grip the bar and retract the scapula.
-    Unrack and hold above chest.
-    Breathe in and lower the bar, touching the chest.
-    Press upwards and squeeze`
+    tip: `Begin with the barbell supported on top of your traps.
+    Keep your chest up, face forward, and place your feet hip shoulder width apart.
+    Descend by flexing your knees, this will make your knees move forwards.
+    Keep your knees aligned with your feet and keep your torso as upright as possible.
+    Continue down until your glutes are parallel to the floor.
+    Pause at the bottom and slowly return to starting position.`
   },
   {
     name: "Leg Press",
@@ -191,9 +188,11 @@ var legs = [{
     muscleB: "Hamstrings",
     sets: "3",
     reps: "8",
-    tip: `Adjust seat, and grab handles shoulder width apart.
-    Pull bar down to upper chest.
-    Pause and slowly return to starting position.`
+    tip: `Adjust the seat and plant your feet shoulder width apart on the leg press pad.
+    Now push through your heel and midfoot and lower the safety bars.
+    Curl your legs until they are 90 degrees.
+    DO NOT straighten your legs when pushing!
+    Finally, pause at the top and slowly return to starting position.`
   },
   {
     name: "Leg Curls",
@@ -202,11 +201,9 @@ var legs = [{
     muscleB: "Glutes",
     sets: "3",
     reps: "8",
-    tip: `Lie flat on the bench.
-    Grip the bar and retract the scapula.
-    Unrack and hold above chest.
-    Breathe in and lower the bar, touching the chest.
-    Press upwards and squeeze.`
+    tip: `Adjust machine to fit your size.
+    Now using your hamstrings, curl your legs as close to your glutes as possible.
+    Pause at the top and slowly return to starting position.`
   }
 ];
 
