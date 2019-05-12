@@ -318,7 +318,6 @@ WorkoutSetUI = arr => {
               <h2>QUICK TIPS</h2>
               <p>${item[i].tip}</p>
             </div>
-            <div class="exercise-check">Check</div>
           </div>
         </div>`;
 
