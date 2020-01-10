@@ -12,7 +12,7 @@ A web app designed to give you the best workout tailored to your skill level and
 ## Authors
 
 * **Micah Mones**
-* **Matt Nazari**
+* **Matthew Nazari**
 
 ## Acknowledgments
 
