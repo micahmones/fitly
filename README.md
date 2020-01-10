@@ -1,11 +1,19 @@
-# FITLY - DESIGN 1
-Micah Mones  
-Matthew Nazari  
+# FITLY
 
-## TO DO
-Setup base HTML/CSS  
-Compile list and information of all exercises  
-Create layout for mobile  
-Setup JavaScript variables  
-Setup JavaScript states  
-Setup JavaScript objects (mostly exercises)  
+A web app designed to give you the best workout tailored to your skill level and needs.
+
+## Built With
+
+* HTML
+* CSS
+* JavaScript
+* Love
+
+## Authors
+
+* **Micah Mones**
+* **Matt Nazari**
+
+## Acknowledgments
+
+* Henry Leung for always being there for us
